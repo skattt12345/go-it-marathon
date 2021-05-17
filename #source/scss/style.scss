@@ -1,0 +1,285 @@
+//<МИКСИНЫ>===============================================================================================
+@import "mixin.scss";
+//</МИКСИНЫ>===============================================================================================
+
+
+//<Подключаем шрифты>=======================================================================================
+
+
+
+//</Подключаем шрифты>=======================================================================================
+
+
+//<Шрифт по умолчанию>==========================================================================================
+$fontfamily:"";
+//</Шрифт по умолчанию>==========================================================================================
+
+
+//<ПЕРЕМЕННЫЕ>===========================================================================================================
+@import "var.scss";
+
+//</ПЕРЕМЕННЫЕ>===========================================================================================================
+
+//<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+@import "reset.scss";
+//</ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
+
+//<ОБОЛОЧКА>===========================================================================================================
+.wrapper{width: 100%;min-height: 100%;overflow: hidden;}
+//</ОБОЛОЧКА>===========================================================================================================
+
+//<ОСНОВНАЯ СЕТКА>===========================================================================================================
+.container{
+	max-width:$mw+px;
+	margin: 0 auto;
+	width: 100%;
+}
+//</ОСНОВНАЯ СЕТКА>===========================================================================================================
+
+// Подключение стилей для хедера
+@import "header.scss";
+// =================================================================================================================
+//<ОСНОВНОЙ БЛОК>====================================================================================================
+body{
+	background-color: #E5E5E5;
+	font-family: 'Montserrat', sans-serif;
+	color: #fff;
+}
+
+.main-content{
+	&__row{
+		display: flex;
+		flex-direction: row-reverse;
+		background: #FFFFFF;
+		box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+	}
+}
+
+.main-content-section {
+	padding: 100px 80px;
+}
+.aboutme {
+	/* .aboutme__proffesion */
+	&__profesxion {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 17px;
+		color: #000000;
+		margin-bottom: 20px;
+	}
+	/* .aboutme__name */
+	&__name {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 45px;
+		line-height: 55px;
+		color: #000000;
+		margin-bottom: 25px;
+	}
+	/* .aboutme__text */
+	&__text {
+		width: 400px;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 24px;
+		color: #595959;
+		margin-bottom: 40px;
+	}
+}
+.project {
+	margin-bottom: 50px;
+}
+.main-content {
+	/* .main-content__title */
+	&__title {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		line-height: 27px;
+		color: #000000;
+		margin-bottom: 10px;
+	}
+}
+.project-list {
+	padding-left: 15px;
+	color: #000000;
+	li{
+		color: #000000;
+		font-weight: bold;
+	}
+	/* .project-list__item */
+	&__item {
+		color: #595959;
+		font-style: normal;
+		font-size: 14px;
+		line-height: 24px;
+		padding-left: 15px;
+	}
+}
+.project-text {
+	color: #595959;
+	font-weight: normal;
+	/* .project-text__link */
+	&__link {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 24px;
+		text-decoration: none;
+		color: #595959;
+
+	}
+	/* .project-text__bracket */
+	&__bracket {
+		color: #000000;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 24px;
+	}
+}
+.work-experience {
+	margin-bottom: 45px;
+	/* .work-experience__position */
+	&__position {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 20px;
+		color: #000000;
+		margin-bottom: 10px;
+	}
+	/* .work-experience__company */
+	&__company {
+		color: #FB6D3A;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 20px;
+	}
+	/* .work-experience__period */
+	&__period {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 15px;
+		color: #A8A8A8;
+		margin-bottom: 10px;
+	}
+	/* .work-experience__divider */
+	&__divider {
+		color: #000000;
+
+	}
+	/* .work-experience__items */
+	&__items {
+		margin-bottom: 20px;
+		padding-left: 15px;
+	}
+	/* .work-experience__item */
+	&__item {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 24px;
+		color: #595959;
+	}
+}
+.education {
+	/* .education__university */
+	&__university {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 20px;
+		color: #FB6D3A;
+	}
+	/* .education__management */
+	&__management {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 17px;
+		color: #000000;
+		margin: 10px 0;
+	}
+}
+
+
+
+//====================================================================================================
+
+//====================================================================================================
+
+.sidebar {
+	background-color: #1E2939;
+	width: 370px;
+	padding: 40px 0px;
+	color: #fff;
+	&__title{
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		line-height: 27px;
+		margin-bottom: 10px;
+	}
+	a{
+		color: #fff;
+		opacity: 0.5;
+	}
+}
+.sidebar-contacts {
+	margin: 50px 0 0 40px;
+}
+
+.sidebar-contact {
+	&__type {
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 24px;
+		margin-right: 5px;
+	}
+	&__link {
+		font-size: 14px;
+		line-height: 24px;
+		line-height: 24px;
+	}
+}
+.tech-skills {
+	margin: 50px 0 0 40px;
+}
+.tech-skills-list {
+	&__item {
+		font-size: 14px;
+		line-height: 24px;
+		color: #FB6D3A
+	}
+	&__text {
+		color: #fff;
+	}
+}
+.soft-skills {
+	margin: 45px 0 0 40px;
+}
+.soft-skills-list {
+	&__item {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 14px;
+		line-height: 24px;
+		color: #FB6D3A
+	}
+	&__text {
+		color: #fff;
+	}
+}
+
+//</ОСНОВНОЙ БЛОК>====================================================================================================
+
+
+//<ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
+@import "forms.scss";
+@import "ui.scss";
+//</ПОДКЛЮЧЕНИЕ ФАЙЛОВ UI СТИЛЕЙ, ФОРМ И ГОТОВЫХ КЛАССОВ>====================================================================================================
